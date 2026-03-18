@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PyMidscene Simple Screenshot Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #f5f7fa;
+        margin: 0;
+        padding: 24px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      h1 {
+        margin-bottom: 16px;
+      }
+      .summary {
+        margin-bottom: 24px;
+        color: #555;
+        font-size: 14px;
+      }
+      .step {
+        background: #fff;
+        border-radius: 12px;
+        padding: 16px 20px 20px;
+        margin-bottom: 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      }
+      .step header {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 12px;
+      }
+      .step h2 {
+        font-size: 16px;
+        margin: 0;
+      }
+      .meta {
+        display: flex;
+        gap: 12px;
+        font-size: 13px;
+        color: #777;
+      }
+      .status {
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: #e2e8f0;
+        text-transform: capitalize;
+      }
+      .status-success { background: #c6f6d5; color: #22543d; }
+      .status-failed { background: #fed7d7; color: #742a2a; }
+      .screenshots {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .screenshots h3 {
+        font-size: 13px;
+        margin: 0 0 4px;
+        color: #555;
+      }
+      .screenshot {
+        max-width: 100%;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      }
+      .no-image {
+        font-size: 12px;
+        color: #999;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px dashed #e2e8f0;
+        text-align: center;
+      }
+      .error {
+        margin: 4px 0 0;
+        font-size: 12px;
+        color: #c53030;
+        background: #fff5f5;
+        padding: 6px 8px;
+        border-radius: 6px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>PyMidscene Simple Screenshot Report</h1>
+      <div class="summary">
+        Session: b07e5081c7d54365a8fc4997918a5cfa &nbsp;|&nbsp;
+        Driver: playwright &nbsp;|&nbsp;
+        Steps: 0
+      </div>
+      <p>没有记录到任何步骤。</p>
+    </div>
+  </body>
+</html>
